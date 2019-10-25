@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Project CSS Styling */
+
+body {
+    background: url(hogwarts-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    background: url(header3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .4;
+    height: 250px;
+    justify-content: center;
+}
+
+#logo {
+    position: absolute;
+    margin: auto;
+    display: block;
+    height: 250px;
+    top: 0px;
+    left: 0;
+    right: 1;
+}
+
+#title {
+    color: white;
+    position: absolute;
+    align-self: center;
+    top: 120px;
+    font-size: 120px;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-style: oblique;
+}
+
+.input {
+    display: flex;
+    flex-flow: column;
+    padding: 250px;
+}
+
+.input > label{
+    color: white;
+    font-family: 'Bilbo Swash Caps', cursive;
+    text-shadow: 1.5px 1.5px gray;
+    font-size: 100px;
+    align-self: center;
+}
+
+.input > #name {
+    height: 50px;
+    font-size: 40px;
+    font-family: 'Bilbo Swash Caps', cursive;
+    text-align: center;
+}
+
+.input > #submit {
+    width: 200px;
+    align-self: center;
+    margin: 25px;
+    background-color: gray;
+    box-shadow: 1px 1px black;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Bilbo Swash Caps', cursive;
+    text-shadow: 1px 1px black;
+}
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 35px;
+    margin-top: 200px;
+}
+
+#mentor-header {
+    color: white;
+    font-family: 'Bilbo Swash Caps', cursive;
+    text-align: center;
+    font-size: 150px;
+    text-shadow: 1.5px 1.5px gray;
+    margin-top: 25px;
+    position: absolute;
+}
+
+.oneCard {
+    display: flex;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzOm3JBUBgngeQLaLZ90CKYm82dWlAzb-yIFHfXx3HIR8B-m-B&s);
+    background-repeat: no-repeat;
+    flex-flow: column nowrap;
+    contain: content;
+    height: 200px;
+    width: 150px;
+    margin: 25px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Bilbo Swash Caps', cursive;
+}
+
+.oneCard > button {
+    background-color: gray;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-family: 'Bilbo Swash Caps', cursive;
+    box-shadow: black;
+}
+
+.oneCard:hover {
+    transform: scale(1.5)
+}
+
+#greeting {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 150px;
+    margin: 10px;
+    align-self: center;
+    color: white;
+    text-shadow: 1.5px 1.5px gray;
+}
+
+.holder {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.friend-page {
+    display: flex;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzOm3JBUBgngeQLaLZ90CKYm82dWlAzb-yIFHfXx3HIR8B-m-B&s);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    contain: content;
+    padding: 15px;
+    margin-bottom: 25px;
+    height: 80vh;
+    width: 40vw;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 75px;
+}
+
+.friend-page > button {
+    margin: 40px;
+    height: 10vh;
+    width: 20vw;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 2vw;
+}
+
+.announce {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 25px;
+    color: white;
+    text-shadow: 1.5px 1.5px gray;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 150px;
+}
+
+.announce > img {
+    opacity: .6;
+    height: 80vh;
+    width: 60vw;
+    margin: 30px;
+}
